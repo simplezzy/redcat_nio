@@ -1,0 +1,18 @@
+NIO
+1、NIO基本
+   核心组成： Channels Buffers  Selectors
+             其他：Pipe FileLock(分布式系统中无效)
+   基本流程：所有的IO在NIO中都从一个Channel开始。Channel如同流，数据从Channel读到Buffer，也可以从Buffer写到Channel中
+
+   Channel实现类
+     FileChannel、DatagramChannel/ServerSocketChannel/SocketChannel
+   Buffer实现类  ByteBuffer...
+   Selectors:允许单线程处理多个Channel
+      使用Selectors时，需要向其注册Channel，然后调用其select()方法,一直阻塞到某个注册的通道有事件就绪。
+
+
+2、ByteBuffer/FileChannel
+
+3、UDP通道（DatagramChannel/ServerSocketChannel/SocketChannel）
+
+4、selector
