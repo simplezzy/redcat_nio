@@ -10,7 +10,6 @@ NIO
    Selectors:允许单线程处理多个Channel
       使用Selectors时，需要向其注册Channel，然后调用其select()方法,一直阻塞到某个注册的通道有事件就绪。
 
-
 2、ByteBuffer/FileChannel
 
 3、UDP通道（DatagramChannel/ServerSocketChannel/SocketChannel）
